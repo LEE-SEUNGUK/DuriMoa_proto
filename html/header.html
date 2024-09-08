@@ -1,50 +1,51 @@
 <header>
-<div class="container-fluid">
-    <div style="font-family: Dongle-Regular;">
-    </div>
-</div>
+    <div class="container"
+        style="background-color: #FFEFEF; height: 80px; display: flex; align-items: center;">
+        <!-- 로고 및 제목 -->
+        <div style="display: flex; align-items: center; width: 33%; padding-left: 50px;">
+            <img src="../image/logo.png" alt="" style="width: 100px;">
+            <p style="margin-left: 200px; font-family: 'LeeSeoyun'; font-size: 24px;">말랑쫀득♥ 여행일기</p>
+        </div>
 
-<!-- <div class="px-4" style="background-color: rgb(247, 240, 240);">
-    <div class="container-fluid">
-        <div class="d-flex flex-wrap align-items-center justify-content-between" id="header_nav">
-            <a href="#" class="nav-link " id="nav_logo" style="margin-left: 30px;">
-                <img src="../image/logo.png" width="120px" alt="">
-            </a>
-            <p class="my-auto" id="couple_name" style="font-size: 28px; margin-right: 700px;">말랑쫀득♥ 여행 일기</p>
-
-            <form class="w-25 col-lg-auto" style="position: absolute; left: 50%; transform: translateX(-50%);">
-                <input type="search" class="form-control rounded-pill" placeholder="여행지를 입력하세요" id="search_input">
+        <!-- 검색창 -->
+        <div class="search-box" style="display: flex; justify-content: center; align-items: center; width: 34%;">
+            <form class="search-container">
+                <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요" style="padding-top: 2px;">
+                <button class="search-btn"></button>
             </form>
+        </div>
 
 
-            <ul class="nav col-lg-auto pt-3 ms-3 my-md-0">
-                <li class="nav-item">
-                    <a href="#" class="nav-link" id="photo_zone">
-                        <img src="../image/photo.png" alt="포토존" width="40" height="40"
-                            style="margin-top: 2px; margin-bottom: 2px;">
-                        <span class="nav-text">포토존</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" id="my_trip">
-                        <img src="../image/diary.png" alt="우리의 추억" width="35" height="35" style="margin-bottom: 3px;">
-                        <span class="nav-text">우리의 추억</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" id="board">
-                        <img src="../image/board.png" alt="게시판" width="37" height="37">
-                        <span class="nav-text">게시판</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" id="my_page" data-bs-target="#login_modal" data-bs-toggle="modal">
-                        <img src="../image/user.png" alt="마이 페이지" width="40" height="40">
-                        <span class="nav-text">마이 페이지</span>
-                    </a>
-                </li>
-            </ul>
+        <!-- 우측 여백을 위한 빈 div -->
+        <div style="width: 33%;">
+            <nav>
+                <ul class="nav-container" style="margin-top: 20px;">
+                    <li class="nav-item" id="photo-item">
+                        <a href="#" class="nav-link">
+                            <div class="nav-content">
+                                <img src="../image/photo.png" alt="포토존" width="40" height="40">
+                                <p class="nav-text" style="margin-top: 3px;">포토존</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="diary-item">
+                        <a href="#" class="nav-link">
+                            <div class="nav-content" style="margin-top: 3px; margin-left: 20px;">
+                                <img src="../image/diary.png" alt="우리의 추억" width="34" height="34">
+                                <p class="nav-text" style="margin-top: 3px;">우리의 추억</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item" id="mypage-item">
+                        <a href="#" class="nav-link">
+                            <div class="nav-content">
+                                <img src="../image/user.png" alt="마이페이지" width="40" height="40">
+                                <p class="nav-text">마이 페이지</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
-</div> -->
 </header>

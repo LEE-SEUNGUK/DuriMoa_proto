@@ -1,0 +1,107 @@
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-txt {
+    padding-left: 10px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: black;
+    width: 250px;
+    height: 50px;
+    transition: all 0.3s ease;
+    outline: none;
+    font-size: 14px;
+    padding-right: 40px;
+    /* 아이콘을 위한 여유 공간 확보 */
+}
+
+
+.search-txt:hover {
+    border-color: rgb(216, 147, 147);
+}
+
+.search-txt:focus {
+    width: 300px;
+    border-color: rgb(216, 147, 147);
+    box-shadow: 0 0 0 1px rgba(216, 147, 147, 0.5);
+}
+
+.search-txt:focus~.search-btn {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 1s ease;
+}
+
+.search-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: url('../image/search.svg') no-repeat center;
+    background-size: 24px 24px;
+    /* 아이콘 크기 조정 */
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* 공통 스타일 */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 250px;
+}
+
+.nav-item {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-text {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* 개별 아이콘에 대한 호버 효과 */
+.nav-item .nav-content {
+    transition: transform 0.5s;
+}
+
+.nav-item:hover .nav-content{
+    transform: translateY(-10px);
+}
+
+/* 호버 시 텍스트 표시 */
+.nav-item:hover .nav-text {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s;
+}
