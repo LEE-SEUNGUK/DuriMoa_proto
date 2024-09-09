@@ -1,8 +1,12 @@
 <main>
     <!-- 로그인 모달 -->
     <div class="login-modal" id="login-modal">
-        <div id="bookmark_div">
+        <div id="bookmark_div" style="text-align: center;">
             <img src="../image/sign_up.png" alt="" id="sign_up_img">
+            <div class="text" style>
+                <p class="hide-hover">처음이세요?</p>
+                <p class="show-hover">회원가입</p>
+            </div>
         </div>
         <div class="modal-body">
             <div class="modal-left">
@@ -17,13 +21,13 @@
                         <label for="auto_login">자동 로그인</label>
                     </div>
                     <div class="login-submit">
-                        <button type="submit">Sign In</button>
+                        <button type="submit">로그인</button>
                     </div>
                 </form>
                 <div class="social-login">
                     <p class="hr-sect">or</p>
                 </div>
-                <button id="kakao-login">Sign In With Kakao</button>
+                <button id="kakao-login">카카오 로그인</button>
             </div>
             <div class="modal-right">
                 <div class="login-right">
