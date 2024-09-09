@@ -1,14 +1,17 @@
 <main>
     <!-- 로그인 모달 -->
     <div class="login-modal" id="login-modal">
+        <div id="bookmark_div">
+            <img src="../image/sign_up.png" alt="" id="sign_up_img">
+        </div>
         <div class="modal-body">
             <div class="modal-left">
                 <h1 style="margin-top: 30px;">
                     <img src="../image/logo.png" alt="" width="150px">
                 </h1>
                 <form action="" id="login-form">
-                    <input type="email" name="userEmail" placeholder="이메일" id="userEmail">
-                    <input type="password" name="userPW" placeholder="비밀번호" id="userPw">
+                    <input type="email" name="userEmail" placeholder="이메일" id="userEmail" autocomplete="off">
+                    <input type="password" name="userPW" placeholder="비밀번호" id="userPw" autocomplete="off">
                     <div class="auto-login-container">
                         <input type="checkbox" id="auto_login">
                         <label for="auto_login">자동 로그인</label>

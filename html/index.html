@@ -12,10 +12,8 @@
         crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -89,8 +87,7 @@
 
             $(document).mouseup(function (e) {
                 if ($("#login-modal").has(e.target).length == 0) {
-                    $("#login-modal").hide();
-                    // 이제 간다
+                    $("#login-modal").fadeOut();
                     sessionStorage.setItem('currentImageIndex', currentIndex); // 현재 인덱스를 세션 스토리지에 저장
                     clearInterval(interval); // 모달이 닫힐 때 슬라이드 쇼 정지
                 }
@@ -109,3 +106,5 @@
 </body>
 
 </html>
+
+<!-- 캘린더 추가 -->
