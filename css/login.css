@@ -96,6 +96,12 @@
     /* 위쪽 여백 */
 }
 
+.auto-login-container p {
+    margin-left: 140px;
+    color: #707070;
+    cursor: pointer;
+}
+
 .auto-login-container>input {
     display: none;
 }
@@ -106,13 +112,13 @@
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    width: 18px;
-    height: 18px;
-    line-height: 18px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
     margin-right: 10px;
     margin-bottom: 2px;
     border-radius: 5px;
-    border: 1px solid #999;
+    border: 1px solid #ccc;
     color: transparent;
     transition: 0.2s;
 }
@@ -120,7 +126,14 @@
 .auto-login-container>input[type=checkbox]:checked+label::before {
     background-color: #c4ddc0;
     color: #fff;
+    outline: none;
     border-color: transparent;
+}
+
+.auto-login-container label:hover::before,
+.auto-login-container input[type=checkbox]:hover+label::before {
+    border-color: rgb(168, 168, 168);
+    transition: all 0.3s;
 }
 
 .login-submit {
@@ -134,9 +147,9 @@
     height: 40PX;
     border-radius: 20px;
     outline: none;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     cursor: pointer;
-    background-color: hsl(112, 30%, 81%);
+    background-color: #c4ddc0;
     font-size: 15px;
     padding-top: 3px;
 }
@@ -199,61 +212,4 @@
     font-size: 0px;
     line-height: 0px;
     margin: 0px 16px;
-}
-
-#bookmark_div {
-    position: fixed;
-    margin-right: 150px;
-    z-index: -1;
-    cursor: pointer;
-}
-
-#bookmark_div .show-hover{
-    /* display: none; */
-}
-
-#bookmark_div:hover {
-    margin-bottom: 530px;
-    transition: all 0.5s;
-}
-
-#bookmark_div:not(hover) {
-    margin-bottom: 515px;
-    transition: all 0.5s;
-}
-
-
-#sign_up_img {
-    margin-top: 30px;
-    width: 100px;
-}
-
-#bookmark_div .text {
-    position: relative; /* relative로 설정 */
-    width: 100%;
-    font-size: 15px;
-}
-
-#bookmark_div .text p {
-    position: absolute; /* 절대 위치로 설정 */
-    width: 100%;
-    bottom: 80px; /* 같은 위치에 배치 */
-    left: 0;
-    transition: opacity 0.2s ease; /* 애니메이션 추가 */
-}
-
-#bookmark_div .hide-hover {
-    opacity: 1; /* 보이도록 설정 */
-}
-
-#bookmark_div .show-hover {
-    opacity: 0; /* 숨기도록 설정 */
-}
-
-#bookmark_div:hover .hide-hover {
-    opacity: 0; /* 호버 시 숨김 */
-}
-
-#bookmark_div:hover .show-hover {
-    opacity: 1; /* 호버 시 보임 */
 }

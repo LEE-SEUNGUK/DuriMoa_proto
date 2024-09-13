@@ -48,6 +48,7 @@
             src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108_2@1.0/Dongle-Regular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
+
         }
     </style>
     <script>
@@ -79,21 +80,22 @@
             $('header').load('header.html', function () {
                 // header.html이 로드된 후에 이벤트 바인딩
                 $('#mypage-item').on('click', function () {
-                    $('#login-modal').fadeIn().css("display", "flex");
+                    $('.login-modal').fadeIn().css("display", "flex");
                     resetSlideShow(); // 슬라이드 쇼 초기화
                     startSlideShow(); // 모달이 열릴 때 슬라이드 쇼 시작
                 });
             });
 
             $(document).mouseup(function (e) {
-                if ($("#login-modal").has(e.target).length == 0) {
-                    $("#login-modal").fadeOut();
+                if ($(".login-modal").has(e.target).length == 0) {
+                    $(".login-modal").fadeOut();
                     sessionStorage.setItem('currentImageIndex', currentIndex); // 현재 인덱스를 세션 스토리지에 저장
                     clearInterval(interval); // 모달이 닫힐 때 슬라이드 쇼 정지
                 }
             });
 
             $('main').load('main.html');
+            $('.login-modal').load('login.html');
         });
     </script>
 </head>
@@ -102,6 +104,7 @@
     <div class="container">
         <header style="height: 10vh;"></header>
         <main style="height: 10vh;"></main>
+        <div class="login-modal"></div>
     </div>
 </body>
 
